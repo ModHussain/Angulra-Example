@@ -129,7 +129,7 @@ $scope.uploadFile = function(resource_id,myFile){
    	debugger;
        var uploadFile = myFile;      						           
        debugger;						        
-       var uploadUrl = "http://localhost:8081/ResourceAdda/rest/resource/uploadFile/"+resource_id;
+       var uploadUrl = "http://localhost:1234/ResourceAdda/rest/resource/uploadFile/"+resource_id;
        RAService.uploadResumeToUrl(uploadFile,uploadUrl).then(function(data){
        		$scope.f=data;
        		console.log($scope.f);

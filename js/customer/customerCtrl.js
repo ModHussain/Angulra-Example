@@ -2,6 +2,7 @@ resourceApp.controller('customerCtrl',['$scope','$state','RAService',function($s
 		var user = localStorage.getItem('use');
 		var admin =localStorage.getItem('admi');
 		$scope.vvv = localStorage.getItem('registrationType');
+		$scope.id=localStorage.getItem('registrationId');
 		$scope.register =  $scope.vvv.split(',');
 		$scope.user1 = localStorage.getItem('user')
 		console.log($scope.user1)

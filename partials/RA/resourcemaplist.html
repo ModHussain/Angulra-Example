@@ -32,6 +32,7 @@
                       <thead>
                           <tr>
                               <th>S.No</th>
+                              <th>Company Name</th>
                                <th>First Name</th>
                                <th>Email</th>
                                <th>Mobile</th>
@@ -46,6 +47,7 @@
                      <tbody>
                          <tr ng-repeat="x in resourcemap123">
                              <td>{{$index+1}}</td>
+                             <td>{{x.companyName}}</td>
                               <td>{{x.firstName}}</td>
                               <td>{{x.emailId}}</td>
                               <td>{{x.mobileNumber}}</td>

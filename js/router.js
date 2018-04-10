@@ -313,7 +313,19 @@ resourceApp.config(
 					cache: false,
 					controller:'customerresourcemapCtrl'
 				})
-            
+				.state('customer.customerlist',{
+                	url: '/customerlist',
+                	templateUrl: 'partials/customer/customerList.html',
+                    cache: false,
+                	controller: 'customerlistCtrl'
+                	
+                })
+                 .state('customer.updatepro',{
+                	url:'/updatecustomer/:userId',
+                	templateUrl: 'partials/customer/customerupdateprofile.html',
+                	cache: false,
+                	controller: 'customerupdateproCtrl'
+                })
                 
                 //customer state end here
                 

@@ -844,7 +844,16 @@ resourceApp.factory('RAService',['$http','$q','APIURL',function($http,$q,APIURL)
 					deferred.reject(err);
 				})
 				return deferred.promise;
-			}
+			},
+			customergetRegistrationById: function(id){
+				var deferred = $q.defer();
+				$http.get( APIURL + '/ResourceAdda/rest/registration/findOneByPrimaryId/' + id).success(function(response){
+						deferred.resolve(response);
+				}).error(function(err){
+					deferred.reject(err);
+				})
+				return deferred.promise;
+	   		},
 			
 			
 			

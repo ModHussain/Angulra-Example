@@ -37,7 +37,7 @@ resourceApp.controller('addpostreqCtrl',["$scope","$rootScope","$state","RAServi
            $scope.registrationId= $scope.comId;
            console.log(uploadFile);
           /* console.log(fd);*/
-           var uploadUrl = "http://localhost:8080/ResourceAdda/rest/requirement/bulkUpload/"+$scope.registrationId;
+           var uploadUrl = "http://localhost:1234/ResourceAdda/rest/requirement/bulkUpload/"+$scope.registrationId;
            RAService.uploadFileToUrl(uploadFile,uploadUrl).then(function(data){
            		$scope.f=data;
            		console.log($scope.f);
